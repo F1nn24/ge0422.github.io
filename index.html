@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5 {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container .prev,
+.slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.3s ease;
+  border-radius: 3px;
+  user-select: none;
+  background-color: rgba(255,255,255,0.7); /* semi-transparent background */
+  z-index: 10; /* ensures buttons are above the images */
+}
+
+/* Left/Right positioning */
+.slideshow-container .prev { 
+  left: -60px;   /* pushes left arrow outside */
+}
+
+.slideshow-container .next { 
+  right: -60px;  /* pushes right arrow outside */
+}
+
+/* Hover effect */
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+  background-color: rgba(255,255,255,1);
+  color: black;
+}
+
+/* Ensure slideshow-container is relative for absolute positioning */
+.slideshow-container {
+  position: relative;
+}
+
+/* Make slideshows smaller and centered */
+.slideshow-container {
+  max-width: 800px;   /* smaller max width */
+  width: 90%;         /* responsive */
+  margin: 40px auto;  /* centers the slideshow */
+  position: relative; /* needed for buttons */
+  border-radius: 10px; /* optional rounded edges */
+  overflow: visible;   /* prevent overflow outside container */
+}
+
+.slideshow-container img {
+  width: 100%;        /* fills container width */
+  height: auto;       /* keeps aspect ratio */
+  display: block;
+}
+
+/* Optional: make it even more mobile-friendly */
+@media (max-width: 600px) {
+  .slideshow-container {
+    width: 100%;
+  }
+}
+			p {
+				font-family: 'Raleway', sans-serif;
+        			font-size: 30px;
+				color: #565656;
+				padding: 10px 5px;
+		
+
+			
+			}
+
+			#secondtitle{
+				text-align: center;
+				font-family: 'Rubik', serif;
+        			font-size: 90px;
+				text-shadow: 0 0 25px rgba(0,0,0,0.8);
+				font-weight: 700;
+				color: #f0f0f0;
+				position: relative;
+				margin-top: 200px;
+				
+				
+			}
+
+			#thirdheader {
+				font-family:'Rubik', serif;
+				font-size: 32px;
+				text-shadow: 0 0 25px rgba(0,0,0,0.8);
+				font-weight: 700;
+				text-align: center;
+				color: #f0f0f0;
+				position: relative;
+
+				
+			}
+			#fourthbody {
+			    width: 100%;        /* matches border */
+			    max-width: 1400px;  /* optional for large screens */
+			    margin: 20px auto; /* centers it */
+			    text-align: center;
+			}
+			#fifth {
+				font-family:'Raleway', sans-serif;
+				font-size: 30px;
+				text-align: center;
+				color: #565656;
+			}
+			.image-container {
+			    position: relative;
+			    width: 100%;
+			}
+  
+			.image-container img {
+				display: block;
+				width: 100%;
+				height: 25%;
+				object-fit: cover;
+ 			    position: relative;
+			    z-index: 1;
+		
+			}
+  
+			.overlay-text {
+				position: absolute;
+				top: 13%;
+				left: 50%;
+				transform: translate(-50%, -50%); 
+				color: #565656; 
+				padding: 5px 5px; 
+				text-align: center;
+				z-index: 3;				
+			}
+			#contentAreaAboutme {
+				
+         			margin: auto;
+  				width: 20%;
+  				margin-top: 20px;
+  				padding: 10px;  
+				display: flex;
+  				justify-content: center;
+				position: relative;
+
+				
+				
+        		}
+			#contentArea2 {
+			    margin: auto;
+			    width: 50%;
+			    display: flex;
+			    justify-content: center;
+			    position: relative;
+				}
+
+			#contentAreaProjecttitle {
+         			height: 150px;
+         			width: 400px;
+         			position: relative;
+         			margin: auto;
+				display: flex;
+  				justify-content: center;
+				position: relative;
+
+        		}
+			p.redborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE1E7;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin: auto;
+  				width: 50%;
+				
+			}
+			p.orangeborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #EBE3D3;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin: auto;
+  				width: 50%;		
+			}
+			p.blueborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DAE1EB;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			p.greenborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #DDEBCF;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			p.purpleborder {
+  				border-style: hidden;
+ 				border-radius: 20px;
+  				background: #E0DEEB;
+				border-width: 35px 15px;
+				padding: 15px;
+				margin-bottom: -10px;
+				margin: auto;
+  				width: 50%;	
+			}
+			#storymapsettings {
+				
+  	    			width: 60%;
+        			position: relative;
+        			margin: auto;
+				display: flex;
+  				justify-content: center;
+				padding: 60px;
+				
+			}
+			a:link, a:visited {
+				padding: 20px;
+ 				color: #E1E1E1;
+  				font-family: 'Archivo Narrow'; serif;			
+  				font-size: 15px;
+			
+			}
+			#storymaplink {
+				
+				width: 100%;
+        			position: relative;
+        			
+				display: flex;
+  				justify-content: center;
+		    }
+			.about-section {
+    			display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    gap: 60px;
+			    width: 70%;
+			    margin: 20px auto 60px auto;
+			    transition: transform 0.4s ease, box-shadow 0.4s ease;
+			}
+
+			.about-image img {
+			    width: 220px;
+			    height: 220px;
+			    object-fit: cover;
+			    border-radius: 50%;
+    
+			    transition: transform 0.4s ease;
+			}
+
+			.about-section:hover .about-image img {
+			    transform: scale(1.05);
+			    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+			}
+
+			.about-text {
+			    flex: 1;
+			    text-align: left;
+			    font-family: 'Rubik', serif;
+			    font-size: 28px;
+			    color: #565656;
+			}
+				
+
+			}
+}
+
+</style>
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="image-container">
+            <img src="BackgroundLayout.jpg" alt="image">
+            <div class="overlay-text">
+	    	<p id="secondtitle"></p>
+  		<p id="thirdheader"></p>
+		    
+		</div>
+	
+	<div id="contentAreaAboutme">
+    <p class="redborder" id="fifth">About Me</p> 
+</div>
+
+<div class="about-section">
+  
+  <div class="about-image">
+    <img src="1692036762249.jfif" alt="Profile photo">
+  </div>
+
+  <div class="about-text">
+    <p>
+    I'm passionate bout using GIS technology to get the most out of spatial data. 
+
+	Exploring data-driven insights in a way that emphasizes accuracy and ease of understanding is at the forefront of my design philosophy on any project, and I always strive to create maps that are detailed, informative, and will exceed client expectations every time. Included in this portfolio is a selection of projects both professional and personal that I am particularly proud of. 
+
+    </p>
+  </div>
+
+</div>
+<div id="contentArea2">
+             <p class="orangeborder" id="fifth">Fayette County Affordability Study, 2026</p> 
+         
+		</div>
+	<div>	
+	<p id="fourthbody">While working with the Fayette County PVA, I became interested in how the affordability of homes was affected by a variety of different factors. Having access to land valuation data and census bureau information allowed me to explore the relationship between home ownership, affordability, and demographics who might be vulnerable to increasing costs of living. With these maps, I also wanted to focus on keeping a consistent formatting, and constrained myself to displaying different kinds of information using a common area of interest in order to highlight the interrelatedness of these factors.
+
+The main takeaways from this project were the effect of the pandemic on housing costs, as well as outlining several areas of the county were residents are primarily older people and those with lower incomes. Being able to determine where these vulnerable populations live gives a better insight into the factors driving these issues, and allows for preventative action to be taken. Bivariate maps were essential for highlighting the interconnectivity of factors like land valuations, population demographics, and level of home ownership within the census tracts. The downside to this was the visual clutter brought by this method - trying to display supplemental information, like highlighting specific tracts and neighborhoods within these brightly colored maps required a minimalistic touch in order to preserve order and prevent things from getting too busy.</p>
+		</div>
+
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Densityofelderly.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Homevaluebuildyr.png" style="width:100%">
+  </div>
+
+  <div class="mySlides1">
+    <img src="Ownerocc.png" style="width:100%">
+  </div>
+
+<div class="mySlides1">
+    <img src="Percentchangeinfcv.png" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+</div>
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/Densityofelderly.png">Slide 1</a>
+		
+		<a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/Homevaluebuildyr.png">Slide 2</a>
+		
+		<a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/Ownerocc.png">Slide 3</a>
+
+		<a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/Percentchangeinfcv.png">Slide 4</a>
+
+		
+    		</div>
+<div id="contentArea2">
+             <p class="blueborder" id="fifth">Senior Capstone Project: Lexington Bike Safety Assessment</p> 
+         
+		</div>
+	<div>	
+		<p id="fourthbody">For my senior capstone class, I was tasked with creating a series of maps depicting data across varying scales, from the entire county all the way down to a single street. I wanted to focus on bike safety within Fayette County because of my interest in sustainable transportation, and my genuine curiosity about the kind of support being shown for cyclists in a smaller city that is mostly car-centric. I started as zoomed-in as possible, focusing on the street level and the areas with the most incidents, then let the reader take a step backwards with the county and census maps in order to understand why I chose this specific street within downtown Lexington. For this project, we were limited to small layouts and grayscale coloration, so our layouts could easily be printed and distributed. Ultimately, this was a unique challenge that helped me learn more about choosing what kind of information to prioritize, as well as how to configure a layout with several different sections so the eye naturally follows the "story" that is being presented. 
+ 	 </p>
+	</div>
+<div class="slideshow-container">
+  </div>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="1772217137622-bdcdc059-7670-4081-8b2d-a21972ad6d04_1.png" style="width:100%">
+  </div>
+  </div>
+
+	
+
+		<div id="storymaplink">
+		
+		
+		<a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/1772217137622-bdcdc059-7670-4081-8b2d-a21972ad6d04_1.png">Slide 1</a>
+		
+
+			</div>
+<div id="contentArea2">
+  			<p class="greenborder" id="fifth">Trimble County Community Plan, Blueprint Kentucky</p> 
+	</div>
+</div>
+
+<p id="fourthbody">
+Created for Blueprint Kentucky's community development work with Trimble County, these maps were aimed at providing an assessment of the geospatial and environmental characteristics of the county and its seat, the town of Bedford. These maps were created with the use of lidar data, as well as Python scripts to develop accurate readings of NDVI values and point cloud visualizations. The layouts were created in strict adherence to a standard developed alongside a multidisciplinary team of design students and professionals, emphasizing clarity and legibility, and were polished with the use of Adobe InDesign. These particular maps use vegetation data and 3D imagery to show the density of trees and other plant life throughout Trimble County and Bedford, informing our recommendations for a shaded bike path connecting points of interest throughout the town. As part of a twenty year development plan devised over the course of the summer, these layouts were part of a wider master document presented to community members and press at the conclusion of the project. To serve this dual purpose, I wanted to make sure that the data included in these maps was as accurate as possible, as well as that it was being presented in a way that clearly communicated information in a way that could be understood by laypersons as well as expert professionals. This document has received an Honor award from the Kentucky chapter of the American Society of Landscape Architects. 
+</p>
+
+<div class="slideshow-container">
+  <div class="mySlides3">
+    <img src="CountyNDVI.png" style="width:100%">
+  </div>
+  <div class="mySlides3">
+    <img src="BedfordNDVI.png" style="width:100%">
+  </div>
+
+  <!-- Navigation buttons -->
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<div id="storymaplink">
+  <a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/CountyNDVI.png">Slide 1</a>
+  <a href="https://raw.githubusercontent.com/F1nn24/PortfolioGIS/refs/heads/main/BedfordNDVI.png">Slide 2</a>
+</div>
+
+
+<script>
+let slideIndex = [1,1,1,1,1];
+let slideId = ["mySlides1", "mySlides2", "mySlides3"]
+showSlides(1, 0);
+    showSlides(1, 1);
+    showSlides(1, 2);
+    showSlides(1, 3);
+    showSlides(1, 4);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html> 
