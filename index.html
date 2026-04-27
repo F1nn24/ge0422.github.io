@@ -78,9 +78,11 @@ img {vertical-align: middle;}
   border-radius: 10px;
 }
 .inline-img {
-  width: 250px;
+  width: 200px;          /* control size here */
+  max-width: 40%;        /* prevents it from growing too big */
   height: auto;
-  margin: 10px 20px 10px 0;
+  float: right;          /* or left */
+  margin: 10px 0 10px 20px;
   border-radius: 10px;
 }
 
