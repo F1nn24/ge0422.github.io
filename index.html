@@ -347,16 +347,16 @@ thththththththtththththttthththhtt
 </p>
 
 <div class="slideshow-container">
-  <div class="mySlides3">
+  <div class="SlidesA">
     <img src="Kentucky.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesA">
     <img src="Letcher County.png" style="width:100%">
   </div>
 
   <!-- Navigation buttons -->
-  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+  <a class="prev" onclick="plusSlides(-1, 1)">❮</a>
+  <a class="next" onclick="plusSlides(1, 1)">❯</a>
 </div>
 
 <div id="storymaplink">
@@ -374,34 +374,34 @@ Text
 </p>
 
 <div class="slideshow-container">
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2006.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2013.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2015.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2016.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2018.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2019-1.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2019-2.png" style="width:100%">
   </div>
   <div class="mySlides3">
     <img src="2022.png" style="width:100%">
   </div>	
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2024.png" style="width:100%">
   </div>
-  <div class="mySlides3">
+  <div class="SlidesB">
     <img src="2025.png" style="width:100%">
   </div>
 	
@@ -506,8 +506,8 @@ Text
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  let slideIndex = [1,1,1,1];
-  let slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlidesText"];
+  let slideIndex = [1,1,1];
+  let slideId = ["SlidesA", "SlidesB", "mySlidesText"];
 
   function plusSlides(n, no) {
     showSlides(slideIndex[no] += n, no);
