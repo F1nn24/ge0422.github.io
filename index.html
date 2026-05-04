@@ -180,15 +180,26 @@ img {vertical-align: middle;}
 				text-align: center;
 				z-index: 3;				
 			}
+
+			.section-title {
+ 				 border-radius: 30px;
+ 				 padding: 12px 40px;
+  				font-family: 'Raleway', sans-serif;
+  				font-size: 24px;
+  				font-weight: 600;
+  				text-align: center;
+  				display: inline-block;
+				}
+
+.section-title.red {
+  background: #EBE1E7;
+}
 			#contentAreaAboutme {
-				
-         			margin: auto;
-  				width: 20%;
-  				margin-top: 20px;
-  				padding: 10px;  
-				display: flex;
+  				width: 50%;              /* match other sections */
+  				margin: 40px auto;       /* center it cleanly */
+  				display: flex;
   				justify-content: center;
-				position: relative;
+}
 
 				
 				
@@ -337,7 +348,7 @@ img {vertical-align: middle;}
 		</div>
 	
 	<div id="contentAreaAboutme">
-    <p class="redborder" id="fifth">Introduction</p> 
+  <div class="section-title red">Introduction</div>
 </div>
 
 <div class="about-section">
